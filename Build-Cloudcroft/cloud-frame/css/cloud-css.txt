@@ -1,0 +1,232 @@
+<style>
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {font-size: 100%;} /*16px*/
+
+:root {
+  background-color:white;
+  box-sizing: border-box;
+}
+
+body {
+	box-sizing:border-box!important;
+	font-family:'Source Sans Pro',sans-serif;
+	background: white;
+	font-weight: 400;
+	margin:0;
+	padding:0;
+	font-size:1.4;
+	line-height: 1.4;
+	color: #000000;
+	body {
+	}
+
+}
+
+p {margin-bottom: 4px;}
+  
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color:steelblue!important;
+}
+
+a:hover, a:active {
+  color: coral;
+  font-size:110%;
+  cursor: pointer;
+}
+
+ul {}
+
+ul li {
+  text-align: left;
+  line-height: 110%;
+  padding: 1vh 4vw;
+  font-size: 80%
+}
+
+ul li a {
+  text-transform: None;
+  text-decoration: none;
+}
+
+
+
+#cloudcroft-nm {
+	position: sticky; top: 0;
+	background-color:white!important;
+	display:grid;
+	place-items:left;
+	width:100%;
+}
+
+#cloudcroft-nm img{
+	width:25vw;
+	text-align:left;
+}
+
+.container {
+	padding: 1vh 1vw !important;
+	Max-width:1000px!important;
+	Margin:0 auto!important;
+  	display: grid;
+  	grid-gap: 3vw;
+  	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+h1 {
+margin-block-start: 0!important
+margin-block-end: 0!important;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+.headliner {
+	display: block;
+	width:100%;
+	max-width:1000px!important;
+	padding: 3vh 0 2vh 0!important;
+	margin:0 auto!important;
+	Font-size:5vh!important;
+	font-weight:100!important;
+	Line-height:1.1;
+	letter-spacing:0!important;
+	text-align:left!important;
+	margin-block-start: 0!important
+	margin-block-end: 0!important;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-family: 'Antic Slab',serif!important;
+}
+
+.card {
+
+	background-color:#fff!important;
+	Border:1px solid #cdcdcd;
+	padding:2vh!important;
+}
+
+.card-tag {
+	padding:0 0 1vh 3%;;
+	text-transform:uppercase;
+	letter-spacing:.67px;
+	font-size:13px!important;
+	font-weight:600!important;
+}
+
+.img {
+	margin:0 auto;
+	Background-color:whitesmoke;
+	Color:#333;
+	height: 20vh!important;
+	background-size:cover;
+	background-position: center center;
+	border-radius:7px;
+}
+
+.img span {
+	display:none;
+	margin:1vh 0 0 0;
+	padding:0 1.25vh .65vh 1.25vh;
+	background-color:#ff3311!important;;
+	Color:white;
+	Border-top-left-radius:12px;
+	Font-size:.92rem;
+	Font-weight:400;
+	text-transform:capitalize;
+	Letter-spacing:1px;
+}
+
+
+.card-head {
+	text-align:left!important;
+	font-size:1.5rem;
+	Line-height:125%;
+	font-weight:400;
+	text-transform:capitalize;
+	color:black;
+	padding: 4% 3% 2% 3%;
+	Font-family:Antic Slab, serif!important;
+	}
+
+.text {
+	padding: 2% 3%;
+	Margin:0 auto!important; 
+	font-size:1rem;
+	Color:#373737!important;
+	Font-weight:400;
+	text-align:left!important;
+}
+
+
+.callout {
+	background:steelblue!important;
+	Display:grid;
+	place-item:center;
+	color:white;
+	text-transform:uppercase;
+	Min-height:35vh!important;
+	color:white}
+	
+	
+.footer {
+	padding:6vh 3vw 2vh;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:300;
+	letter-spacing:1.5px;
+	}
+	
+	
+
+	@media (max-width:600px) {
+	height: 34vh!important;}
+	
+	</style>

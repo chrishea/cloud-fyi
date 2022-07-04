@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Cloudcroft NM Guide -->
+  <title>Cloudcroft.fyi</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+ 
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com?ckcachebust=7B3CE02D545EDD8147D8D08D505B9D19" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  
+
+<style><style>
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {font-size: 100%;} /*16px*/
+
+:root {
+  background-color:white;
+  box-sizing: border-box;
+}
+
+body {
+	box-sizing:border-box!important;
+	font-family:'Source Sans Pro',sans-serif;
+	background: white;
+	font-weight: 400;
+	margin:0;
+	padding:0;
+	font-size:1.4;
+	line-height: 1.4;
+	color: #000000;
+	body {
+	}
+
+}
+
+p {margin-bottom: 4px;}
+  
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color:steelblue!important;
+}
+
+a:hover, a:active {
+  color: coral;
+  font-size:110%;
+  cursor: pointer;
+}
+
+ul {}
+
+ul li {
+  text-align: left;
+  line-height: 110%;
+  padding: 1vh 4vw;
+  font-size: 80%
+}
+
+ul li a {
+  text-transform: None;
+  text-decoration: none;
+}
+
+
+
+#cloudcroft-nm {
+	position: sticky; top: 0;
+	background-color:white!important;
+	display:grid;
+	place-items:left;
+	width:100%;
+}
+
+#cloudcroft-nm img{
+	width:25vw;
+	text-align:left;
+}
+
+.container {
+	padding: 1vh 1vw !important;
+	Max-width:1000px!important;
+	Margin:0 auto!important;
+  	display: grid;
+  	grid-gap: 3vw;
+  	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+h1 {
+margin-block-start: 0!important
+margin-block-end: 0!important;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+.headliner {
+	display: block;
+	width:100%;
+	max-width:1000px!important;
+	padding: 3vh 0 2vh 0!important;
+	margin:0 auto!important;
+	Font-size:5vh!important;
+	font-weight:100!important;
+	Line-height:1.1;
+	letter-spacing:0!important;
+	text-align:left!important;
+	margin-block-start: 0!important
+	margin-block-end: 0!important;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-family: 'Antic Slab',serif!important;
+}
+
+.card {
+
+	background-color:#fff!important;
+	Border:1px solid #cdcdcd;
+	padding:2vh!important;
+}
+
+.card-tag {
+	padding:0 0 1vh 3%;;
+	text-transform:uppercase;
+	letter-spacing:.67px;
+	font-size:13px!important;
+	font-weight:600!important;
+}
+
+.img {
+	margin:0 auto;
+	Background-color:whitesmoke;
+	Color:#333;
+	height: 20vh!important;
+	background-size:cover;
+	background-position: center center;
+	border-radius:7px;
+}
+
+.img span {
+	display:none;
+	margin:1vh 0 0 0;
+	padding:0 1.25vh .65vh 1.25vh;
+	background-color:#ff3311!important;;
+	Color:white;
+	Border-top-left-radius:12px;
+	Font-size:.92rem;
+	Font-weight:400;
+	text-transform:capitalize;
+	Letter-spacing:1px;
+}
+
+
+.card-head {
+	text-align:left!important;
+	font-size:1.5rem;
+	Line-height:125%;
+	font-weight:400;
+	text-transform:capitalize;
+	color:black;
+	padding: 4% 3% 2% 3%;
+	Font-family:Antic Slab, serif!important;
+	}
+
+.text {
+	padding: 2% 3%;
+	Margin:0 auto!important; 
+	font-size:1rem;
+	Color:#373737!important;
+	Font-weight:400;
+	text-align:left!important;
+}
+
+
+.callout {
+	background:steelblue!important;
+	Display:grid;
+	place-item:center;
+	color:white;
+	text-transform:uppercase;
+	Min-height:35vh!important;
+	color:white}
+	
+	
+.footer {
+	padding:6vh 3vw 2vh;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:12px;
+	font-weight:300;
+	letter-spacing:1.5px;
+	}
+	
+	
+
+	@media (max-width:600px) {
+	height: 34vh!important;}
+	
+	</style>
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+<div id="cloudcroft-nm">
+    <div style="width:100%;min-height:30px;">
+        <img src="img/logo-mtn-cloudcroft.png" />
+    </div>
+</div>
+<div class="container" style="padding-left:3vw!important;">
+  <h1 class="headliner">29 Things You Should Know About Cloudcroft, NM</h1>
+</div>
+
+<div class="container">
+  					<a href="#" target="_blank">
+  					<div class="card">
+  						<div class="card-tag">Walk in the Forest</div>
+  						<div class="img" style="background-image:url('img/img-1.jpg')">
+  						</div>
+  						<div class="card-head">Getting High in Cloudcroft</div>
+  						<div class="text">Enjoy hiking in the beautiful historical Cloudcroft on the Osha trail. The Osha trail is an easy hiking trail named after the Osha plant, which grows along its path.</div>
+  					</div>
+  					</a>
+  					
+  					
+  					<a href="#" target="_blank">
+  										<div class="card">
+  											<div class="card-tag">Tour Le Cloudcroft</div>
+  											<div class="img" style="background-image:url('img/img-2.jpg')">
+  											</div>
+  											<div class="card-head">Go Biking</div>
+  											<div class="text">Relax and absorb the beauty of the scenic vista close to the mountains, the tall trees, and the clouds. '</div>
+  										</div>
+  										</a>
+  										
+  										
+  					<a href="#" target="_blank">
+  															<div class="card">
+  																<div class="card-tag">Hike Here</div>
+  																<div class="img" style="background-image:url('img/img-3.jpg')">
+  																</div>
+  																<div class="card-head">Trippin on the Trails</div>
+  																<div class="text">Silver Spring fishing pond is an excellent place to create that first-time fishing experience with your kids. '</div>
+  															</div>
+  															</a>
+  															
+  															
+  					<a href="#" target="_blank">
+  																				<div class="card">
+  																					<div class="card-tag">Park World</div>
+  																					<div class="img" style="background-image:url('img/img-4.jpg')">
+  																					</div>
+  																					<div class="card-head">Lincoln National Forest High</div>
+  																					<div class="text">Are you new to hiking, and do you love the serene environment of nature? The Osha trail is just for you.</div>
+  																				</div>
+  																				</a>
+  																				
+  																				
+  					<a href="#" target="_blank">
+  																									<div class="card">
+  																										<div class="card-tag">Java Java</div>
+  																										<div class="img" style="background-image:url('img/img-5.jpg')">
+  																										</div>
+  																										<div class="card-head">Coffee Central</div>
+  																										<div class="text">Cloudcroft is a village in Otero County, New Mexico. It is situated within the Lincoln National Forest.</div>
+  																									</div>
+  																									</a>
+  																									
+  																									
+  					<a href="#" target="_blank">
+  																														<div class="card">
+  																															<div class="card-tag">BBQ King</div>
+  																															<div class="img" style="background-image:url('img/img-6.jpg')">
+  																															</div>
+  																															<div class="card-head">Mad Jack's Worth the Wait?</div>
+  																															<div class="text">A tour of the Museum would be incomplete without visiting the pioneer village.</div>
+  																														</div>
+  																														</a>
+  																														
+  																														
+  					<a href="#" target="_blank">
+  																																			<div class="card">
+  																																				<div class="card-tag">REBECCA's Story</div>
+  																																				<div class="img" style="background-image:url('img/img-7.jpg')">
+  																																				</div>
+  																																				<div class="card-head">What You Don't Know About the Lodge</div>
+  																																				<div class="text">The arid region sits on one of the highest elevations in the United States, almost 9,000 feet.</div>
+  																																			</div>
+  																																			</a>
+  																																			
+  																																			
+  					<a href="#" target="_blank">
+  																																								<div class="card">
+  																																									<div class="card-tag">Aclimate ourslef</div>
+  																																									<div class="img" style="background-image:url('img/img-8.jpg')">
+  																																									</div>
+  																																									<div class="card-head">Watch your high altitude sickness</div>
+  																																									<div class="text">Relax and absorb the beauty of the scenic vista close to the mountains, the tall trees, and the clouds. '</div>
+  																																								</div>
+  																																								</a>
+  																																								
+  																																								
+  					<a href="#" target="_blank">
+  																																													<div class="card">
+  																																														<div class="card-tag">Lay DOwn Your Head</div>
+  																																														<div class="img" style="background-image:url('img/img-9.jpg')">
+  																																														</div>
+  																																														<div class="card-head">Best Camping Options</div>
+  																																														<div class="text">Silver Spring fishing pond is an excellent place to create that first-time fishing experience with your kids. '</div>
+  																																													</div>
+  																																													</a>
+  																																													
+  																																													
+  					<a href="#" target="_blank">
+  																																																		<div class="card">
+  																																																			<div class="card-tag">Hike the Trails</div>
+  																																																			<div class="img" style="background-image:url('img/img-10.jpg')">
+  																																																			</div>
+  																																																			<div class="card-head">Hit the OSHA Trail</div>
+  																																																			<div class="text">Are you new to hiking, and do you love the serene environment of nature? The Osha trail is just for you.</div>
+  																																																		</div>
+  																																																		</a>
+  																																																		
+  																																																		
+  					<a href="#" target="_blank">
+  																																																							<div class="card">
+  																																																								<div class="card-tag">Night Sky Dreaming</div>
+  																																																								<div class="img" style="background-image:url('img/img-11.jpg')">
+  																																																								</div>
+  																																																								<div class="card-head">Watch Your Stars</div>
+  																																																								<div class="text">Cloudcroft is a village in Otero County, New Mexico. It is situated within the Lincoln National Forest.</div>
+  																																																							</div>
+  																																																							</a>
+  																																																							
+  																																																							
+  					<a href="#" target="_blank">
+  																																																												<div class="card">
+  																																																													<div class="card-tag">See For Yourself</div>
+  																																																													<div class="img" style="background-image:url('img/img-12.jpg')">
+  																																																													</div>
+  																																																													<div class="card-head">Web Cams</div>
+  																																																													<div class="text">A tour of the Museum would be incomplete without visiting the pioneer village.</div>
+  																																																												</div>
+  																																																												</a>
+  																																																												
+  																																																												
+  					<a href="#" target="_blank">
+  																																																																	<div class="card">
+  																																																																		<div class="card-tag">Get Healthy</div>
+  																																																																		<div class="img" style="background-image:url('img/img-13.jpg')">
+  																																																																		</div>
+  																																																																		<div class="card-head">Massage Therapy:Treat Your Muscles</div>
+  																																																																		<div class="text">The arid region sits on one of the highest elevations in the United States, almost 9,000 feet.</div>
+  																																																																	</div>
+  																																																																	</a>
+  																																																																	
+  																																																																	
+  					<a href="#" target="_blank">
+  																																																																						<div class="card">
+  																																																																							<div class="card-tag">Tour Le Cloudcroft</div>
+  																																																																							<div class="img" style="background-image:url('img/img-14.jpg')">
+  																																																																							</div>
+  																																																																							<div class="card-head">7 Secrets Locals Know</div>
+  																																																																							<div class="text">Relax and absorb the beauty of the scenic vista close to the mountains, the tall trees, and the clouds. '</div>
+  																																																																						</div>
+  																																																																						</a>
+  																																																																						
+  																																																																						
+  					<a href="#" target="_blank">
+  																																																																											<div class="card">
+  																																																																												<div class="card-tag">Hike Here</div>
+  																																																																												<div class="img" style="background-image:url('img/img-15.jpg')">
+  																																																																												</div>
+  																																																																												<div class="card-head">T-Shirts for the Hipsters</div>
+  																																																																												<div class="text">Silver Spring fishing pond is an excellent place to create that first-time fishing experience with your kids. '</div>
+  																																																																											</div>
+  																																																																											</a>
+  																																																																											
+  																																																																											
+  					<a href="#" target="_blank">
+  																																																																																<div class="card">
+  																																																																																	<div class="card-tag">Park World</div>
+  																																																																																	<div class="img" style="background-image:url('img/img-16.jpg')">
+  																																																																																	</div>
+  																																																																																	<div class="card-head">Ask a Local</div>
+  																																																																																	<div class="text">Are you new to hiking, and do you love the serene environment of nature? The Osha trail is just for you.</div>
+  																																																																																</div>
+  																																																																																</a>
+  																																																																																
+  																																																																																
+  					<a href="#" target="_blank">
+  																																																																																					<div class="card">
+  																																																																																						<div class="card-tag">Java Java</div>
+  																																																																																						<div class="img" style="background-image:url('img/img-17.jpg')">
+  																																																																																						</div>
+  																																																																																						<div class="card-head">Get Teed Off</div>
+  																																																																																						<div class="text">Cloudcroft is a village in Otero County, New Mexico. It is situated within the Lincoln National Forest.</div>
+  																																																																																					</div>
+  																																																																																					</a>
+  																																																																																					
+  																																																																																					
+  					<a href="#" target="_blank">
+  																																																																																										<div class="card">
+  																																																																																											<div class="card-tag">BBQ King</div>
+  																																																																																											<div class="img" style="background-image:url('img/img-18.jpg')">
+  																																																																																											</div>
+  																																																																																											<div class="card-head">Bike Races</div>
+  																																																																																											<div class="text">A tour of the Museum would be incomplete without visiting the pioneer village.</div>
+  																																																																																										</div>
+  																																																																																										</a>
+  																																																																																										
+  																																																																																										
+  					<a href="#" target="_blank">
+  																																																																																															<div class="card">
+  																																																																																																<div class="card-tag">REBECCA's Story</div>
+  																																																																																																<div class="img" style="background-image:url('img/img-19.jpg')">
+  																																																																																																</div>
+  																																																																																																<div class="card-head">Camping Faves</div>
+  																																																																																																<div class="text">The arid region sits on one of the highest elevations in the United States, almost 9,000 feet.</div>
+  																																																																																															</div>
+  																																																																																															</a>
+  																																																																																															
+  																																																																																															
+  					<a href="#" target="_blank">
+  																																																																																																				<div class="card">
+  																																																																																																					<div class="card-tag">Aclimate ourslef</div>
+  																																																																																																					<div class="img" style="background-image:url('img/img-20.jpg')">
+  																																																																																																					</div>
+  																																																																																																					<div class="card-head">Fly Fishing the Penasco</div>
+  																																																																																																					<div class="text">Are you new to hiking, and do you love the serene environment of nature? The Osha trail is just for you.</div>
+  																																																																																																				</div>
+  																																																																																																				</a>
+  																																																																																																				
+  																																																																																																				
+  					<a href="#" target="_blank">
+  																																																																																																									<div class="card">
+  																																																																																																										<div class="card-tag">Lay DOwn Your Head</div>
+  																																																																																																										<div class="img" style="background-image:url('img/img-21.jpg')">
+  																																																																																																										</div>
+  																																																																																																										<div class="card-head">Sunspot</div>
+  																																																																																																										<div class="text">The unique snow in Cloudcroft makes it a peculiar must-visit place for skiing.</div>
+  																																																																																																									</div>
+  																																																																																																									</a>
+  																																																																																																									
+  																																																																																																									
+  					<a href="#" target="_blank">
+  																																																																																																														<div class="card">
+  																																																																																																															<div class="card-tag">Hike the Trails</div>
+  																																																																																																															<div class="img" style="background-image:url('img/img-22.jpg')">
+  																																																																																																															</div>
+  																																																																																																															<div class="card-head">Cabin Rentals</div>
+  																																																																																																															<div class="text">Relax and absorb the beauty of the scenic vista close to the mountains, the tall trees, and the clouds.</div>
+  																																																																																																														</div>
+  																																																																																																														</a>
+  																																																																																																														
+  																																																																																																														
+  					<a href="#" target="_blank">
+  																																																																																																																			<div class="card">
+  																																																																																																																				<div class="card-tag">Night Sky Dreaming</div>
+  																																																																																																																				<div class="img" style="background-image:url('img/img-23.jpg')">
+  																																																																																																																				</div>
+  																																																																																																																				<div class="card-head">Remodel</div>
+  																																																																																																																				<div class="text">Silver Spring fishing pond is an excellent place to create that first-time fishing experience with your kids.</div>
+  																																																																																																																			</div>
+  																																																																																																																			</a>
+  																																																																																																																			
+  																																																																																																																			
+  					<a href="#" target="_blank">
+  																																																																																																																								<div class="card">
+  																																																																																																																									<div class="card-tag">See For Yourself</div>
+  																																																																																																																									<div class="img" style="background-image:url('img/img-24.jpg')">
+  																																																																																																																									</div>
+  																																																																																																																									<div class="card-head">Stay Cool</div>
+  																																																																																																																									<div class="text">Are you new to hiking, and do you love the serene environment of nature? The Osha trail is just for you.</div>
+  																																																																																																																								</div>
+  																																																																																																																								</a>
+  																																																																																																																								
+  																																																																																																																								
+  					<a href="#" target="_blank">
+  																																																																																																																													<div class="card">
+  																																																																																																																														<div class="card-tag">Get Healthy</div>
+  																																																																																																																														<div class="img" style="background-image:url('img/img-25.jpg')">
+  																																																																																																																														</div>
+  																																																																																																																														<div class="card-head">Ski & Tubes</div>
+  																																																																																																																														<div class="text">Cloudcroft is a village in Otero County, New Mexico. It is situated within the Lincoln National Forest.</div>
+  																																																																																																																													</div>
+  																																																																																																																													</a>
+  																																																																																																																													
+  																																																																																																																													
+  					<a href="#" target="_blank">
+  																																																																																																																																		<div class="card">
+  																																																																																																																																			<div class="card-tag">What We Do</div>
+  																																																																																																																																			<div class="img" style="background-image:url('img/img-26.jpg')">
+  																																																																																																																																			</div>
+  																																																																																																																																			<div class="card-head">Weather</div>
+  																																																																																																																																			<div class="text">A tour of the Museum would be incomplete without visiting the pioneer village.</div>
+  																																																																																																																																		</div>
+  																																																																																																																																		</a>
+  																																																																																																																																		
+  																																																																																																																																		
+  					<a href="#" target="_blank">
+  																																																																																																																																							<div class="card">
+  																																																																																																																																								<div class="card-tag">Aclimate ourslef</div>
+  																																																																																																																																								<div class="img" style="background-image:url('img/img-27.jpg')">
+  																																																																																																																																								</div>
+  																																																																																																																																								<div class="card-head">What's Nearby?</div>
+  																																																																																																																																								<div class="text">The arid region sits on one of the highest elevations in the United States, almost 9,000 feet.</div>
+  																																																																																																																																							</div>
+  																																																																																																																																							</a>
+  																																																																																																																																							
+  																																																																																																																																							
+</div>
+
+</div>
+<div class="footer">Copyright 2022 by SunZen LLC  |  Cloudrcroft, NM</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
